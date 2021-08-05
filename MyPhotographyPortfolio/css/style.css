@@ -1,0 +1,342 @@
+* {cursor: pointer;
+  color: gainsboro;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans Narrow', sans-serif;}
+
+.h5 {
+  font-size: 0.8rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.m {
+  margin-top: 2rem;
+  margin-left: 8rem;
+  position: absolute;
+}
+.profile {
+  height: 10rem;
+  align-content: center;
+  width: 10rem;
+  margin-top: 5rem;
+  /* margin-right: 18rem; */
+  margin-bottom: 2rem;
+}
+.mt-0 {
+  margin-top: 5rem !important;
+}
+/* .ms-1 {
+  margin-left: 47rem !important;
+} */
+.navcontainer {
+  display: flex;
+  padding: 1.5rem;
+  justify-content: left;
+}
+.navbar {
+  justify-content: flex-end;
+  text-align: end;
+}
+.navbar-nav {
+  margin: 1% 0%;
+}
+.navbar-collapse {
+  text-align: end;
+  justify-content: flex-end;
+}
+.navcontainer .navbtn {
+  position: absolute;
+  width: 96%;
+}
+
+.nav-item {
+  padding: 0% 10%;
+}
+
+#navbarSupportedContent {
+  transition: height 1.5s ease !important;
+}
+
+
+
+.margin {
+  margin-left: 0.5rem;
+}
+.cp {
+  cursor: pointer;
+}
+
+section {
+  padding-top: 20px;
+  width: 100%;
+}
+.iconcontainer{
+  display: flex;
+  flex-direction: row;
+  background-color:white;
+  height: 120px;
+  justify-content: center;
+  align-items:center ;
+  flex-wrap: wrap;
+}
+
+.navlinks{
+  cursor: pointer;
+  text-align: center;
+  margin-top: 15px;
+  margin-left: 30px;
+  height: 40px;
+  width: 160px;
+  background-color: rgb(43, 60, 75);
+  /* background-color:rgb(25, 25, 233); */
+  padding: 3px 18px 13px 18px;
+  color:whitesmoke;
+  font-size: 20px;
+  font-weight: 600;
+  box-shadow: -5px -5px 5px 0px rgba(255, 255, 255, 0.1),
+  8px 10px 20px 0px rgba(12, 8, 8, 0.5);
+  border-radius: 10px;
+  border: 2px solid rgb(49, 49, 61) ;
+  transition: 0.5s;
+}
+.navlinks:hover{
+  transform: scale(1.2);
+}
+.product {
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.product .itemBox {
+  position: relative;
+  width: 20rem;
+  height: 18rem;
+  margin: 25px 10px 10px 10px;
+  
+}
+.product .itemBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: all 0.1s ease-out;
+  cursor: pointer;
+}
+.product .itemBox img:hover {
+  transform: scale(1.1);
+}
+
+.modal {
+  background: rgba(0, 0, 0, 0.8);
+  display: block;
+  opacity: 0;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  transition: all 0.25s ease-out;
+}
+.modal p {
+  color: whitesmoke;
+  position: absolute;
+  font-size: 2rem;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -5%);
+}
+.modal.open {
+  opacity: 1;
+
+  pointer-events: all;
+}
+.full-img {
+  position: absolute;
+  z-index: 10000;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.5);
+  transition: all 0.25s ease-out;
+}
+.full-img.open {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.caption {
+  color: black;
+  font-size: 5rem;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.wedding2{
+  background-size: cover;
+}
+
+
+.rotate {
+  margin: 30px;
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+
+.input-subscribe{
+  height: 37px;
+  margin-right:-4px ;
+  border: none;
+  
+}
+
+.fixed-bookme{
+  position: fixed;
+  /* left: 1000px; */
+  right: 0;
+  bottom: 0;
+ 
+}
+
+
+
+.footer-container{
+ 
+  height:100%;
+  width: 100%;
+  background-color: rgb(48, 48, 56);
+  
+  }
+
+
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  color: black;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+}
+
+/* Add styles to the form container */
+.form-container {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  padding: 10px;
+  padding-right: 9%;
+  background-color: white;
+}
+ 
+
+/* Set a style for the submit/login button */
+.form-container .btnsend {
+  background-color: white;
+  color:black;
+  padding: 8px 20px;
+  border-radius: 0px;
+  cursor: pointer;
+  width:90.3%;
+  margin-bottom:10px;
+  font-size: 1.6rem; font-weight: 600; margin-left: 10px;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  
+  border: 5px black;
+color: black;
+padding: 6px 25px;
+margin-right: 40%;
+font-size: 1.6rem; font-weight: 600; margin-left: 110px;
+}
+.cancel:hover{
+  color: grey;
+  /* border: 2px solid grey; */
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover { 
+  opacity: 1;
+}
+
+.inputform{
+  width: 45%;
+  padding: 15px; color: black;margin: 5px 0 22px 0; border: solid black;
+  height: 10%;  outline: none;
+}
+.textarea{
+  color: black; width: 90.3%; padding: 15px; height: 100px;
+  border: solid black;
+}
+.margin-right
+{margin-right:42%;}
+
+ /* .bookmebtn{
+  font-size: 1.6rem; font-weight: 600; margin-left: 10px;
+}  */
+.bookmeh1{
+  color: black;margin-top: 6%; margin-right: 38%;
+  font-weight: 600; border: none;
+}
+.newsleter{
+border-radius: 5px;
+margin-bottom: 5px;
+height: 33px;
+padding-left: 5px;
+color: black;
+}
+.footer{
+  background-color: rgb(25, 26, 26);
+  font-size: 15px;
+}
+.padding-bottom{
+  padding-bottom: 20px;
+}
